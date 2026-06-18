@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afeti-Morti Setor Cyril</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="icon" href="data:image/jpeg;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+ <!-- NAV -->
+<nav>
+  <div class="nav-name">Cyril Setor Afeti-Morti</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <!--<a href="#skills">Skills</a>-->
+    <a href="#projects">Projects</a>
+    <a href="#experience">Work</a>
+    <a href="#education">Education &amp; Certifications</a>
+    <!--<a href="#certifications">Certs</a>-->
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="hamburger" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <a href="#about">About</a>
+  <!--<a href="#skills">Skills</a>-->
+  <a href="#projects">Projects</a>
+  <a href="#experience">Work Experience</a>
+  <a href="#education">Education &amp; Certifications</a>
+  <!--<a href="#certifications">Certs</a>-->
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1800&q=80" alt="Data center server corridor"/>
+    <div class="hero-image-overlay"></div>
+    <div class="hero-text">
+      <div class="hero-tag">Fibre &amp; Cloud Infrastructure Engineer in Training · Accra, Ghana</div>
+      <h1 class="hero-h1">Cyril Setor<br/><em>Afeti-Morti</em></h1>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <p class="hero-summary">
+      BSc Information Technology student at the University of Cape Coast, building practical skills in network infrastructure, cloud connectivity, cybersecurity, and automation — grounded in real government IT experience at NITA Ghana.
+    </p>
+    <div class="hero-right-block">
+      <p class="hero-statement">"Working inside a government agency taught me something classrooms don't — how infrastructure actually fails, and what it costs when it does."</p>
+      <div class="hero-links">
+        <a href="mailto:morticyril@gmail.com">morticyril@gmail.com</a>
+        <a href="https://www.linkedin.com/in/cyril-afetimorti1100" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Ramaphosa" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">CCNA In Progress<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Cisco Certified<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Fibre &amp; GPON<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Python Automation<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Network Infrastructure &amp; Cabling<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">API Security<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">AWS Cloud Practitioner<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Cloud Connectivity<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">IPv4 Subnetting<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Government IT<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Next.js · Firebase<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">CCNA In Progress<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Cisco Certified<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Fibre &amp; GPON<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Python Automation<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Network Infrastructure &amp; Cabling<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">API Security<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">AWS Cloud Practitioner<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Cloud Connectivity<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">IPv4 Subnetting<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Government IT<span class="ticker-dot">·</span></span>
+    <span class="ticker-item">Next.js · Firebase<span class="ticker-dot">·</span></span>
+  </div>
+</div>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <div class="photo-strip-item">
+    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80" alt="Ethernet patch panel cabling"/>
+    <div class="photo-strip-label">Network Infrastructure &amp; Cabling</div>
+  </div>
+  <div class="photo-strip-item">
+    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&q=80" alt="Terminal command line interface"/>
+    <div class="photo-strip-label">Cybersecurity &amp; Terminal</div>
+  </div>
+  <div class="photo-strip-item">
+    <img src="https://images.unsplash.com/photo-1586772002130-b0f3daa6288b?w=600&q=80" alt="Fibre optic cables glowing"/>
+    <div class="photo-strip-label">Fibre Optics</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section-wrap">
+  <div class="sec-eyebrow reveal">Profile</div>
+  <div class="about-grid">
+    <div class="reveal">
+      <p class="about-big">Building the infrastructure layer where <em>fibre networks</em> hand off to cloud systems — from the physical layer through to automation at scale.</p>
+      <p class="about-body">
+        During my internship at NITA Ghana, I worked across live government infrastructure — contributing to network troubleshooting at the Ministry of Education, deploying access point and ethernet infrastructure at GIKACE for a GFA tournament, and building an internal staff portal using Next.js, Tailwind CSS, and Firebase.<br/><br/>
+        Working inside a government agency taught me something classrooms don't — how infrastructure actually fails, and what it costs when it does. That experience clarified what I want to build toward: the infrastructure layer where fibre networks hand off to cloud systems, and the automation that keeps it running at scale.<br/><br/>
+        I'm actively looking for internship opportunities in infrastructure, cloud, or network engineering — with plans to pursue graduate studies in Computer Science.
+      </p>
+    </div>
+    <div class="about-image reveal">
+      <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&q=80" alt="IT engineer at server rack"/>
+      <div class="about-image-caption">Live government network infrastructure · NITA Ghana, 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section-wrap alt">
+  <h2 class="sec-title reveal">Skills &amp; <em>Expertise</em> <span class="sec-title-meta">50+ competencies</span></h2>
+  <div class="skills-river">
+    <div class="skill-row reveal">
+      <div class="skill-row-label">Networking</div>
+      <div class="skill-row-items">
+        <span class="skill-item core">CCNA (In Progress)</span>
+        <span class="skill-item core">Cisco IOS</span>
+        <span class="skill-item core">IPv4 Subnetting</span>
+        <span class="skill-item core">Routing &amp; Switching</span>
+        <span class="skill-item core">DHCP</span>
+        <span class="skill-item core">DNS</span>
+        <span class="skill-item">ARP</span>
+        <span class="skill-item">Network Administration</span>
+        <span class="skill-item">Cisco Network Devices</span>
+        <span class="skill-item">Cable Management</span>
+        <span class="skill-item">Binary Systems</span>
+        <span class="skill-item">Computer Hardware</span>
+        <span class="skill-item">Computer Architecture</span>
+      </div>
+    </div>
+    <div class="skill-row reveal">
+      <div class="skill-row-label">Cybersecurity</div>
+      <div class="skill-row-items">
+        <span class="skill-item core">SOC Analysis</span>
+        <span class="skill-item core">Application Security</span>
+        <span class="skill-item core">API Security</span>
+        <span class="skill-item core">Risk Management</span>
+        <span class="skill-item">Cybersecurity Compliance</span>
+        <span class="skill-item">App Security Testing</span>
+        <span class="skill-item">Threat Analysis</span>
+        <span class="skill-item">Troubleshooting</span>
+      </div>
+    </div>
+    <div class="skill-row reveal">
+      <div class="skill-row-label">Programming</div>
+      <div class="skill-row-items">
+        <span class="skill-item core">Python</span>
+        <span class="skill-item core">JavaScript</span>
+        <span class="skill-item core">Next.js</span>
+        <span class="skill-item">C++</span>
+        <span class="skill-item">HTML</span>
+        <span class="skill-item">CSS / Tailwind</span>
+        <span class="skill-item">Git / GitHub</span>
+        <span class="skill-item">Firebase</span>
+        <span class="skill-item">REST APIs</span>
+        <span class="skill-item">Java</span>
+      </div>
+    </div>
+    <div class="skill-row reveal">
+      <div class="skill-row-label">Cloud &amp; Infra</div>
+      <div class="skill-row-items">
+        <span class="skill-item core">AWS VPC (Learning)</span>
+        <span class="skill-item core">Terraform (Learning)</span>
+        <span class="skill-item">Hybrid Networks</span>
+        <span class="skill-item">GPON Architecture</span>
+        <span class="skill-item">Direct Connect</span>
+        <span class="skill-item">AI/ML in Networks</span>
+      </div>
+    </div>
+    <div class="skill-row reveal">
+      <div class="skill-row-label">Design &amp; Tools</div>
+      <div class="skill-row-items">
+        <span class="skill-item">Figma</span>
+        <span class="skill-item">Responsive Web Design</span>
+        <span class="skill-item">UI/UX Design</span>
+        <span class="skill-item">VS Code</span>
+        <span class="skill-item">Cisco Packet Tracer</span>
+        <span class="skill-item">Microsoft Office Suite</span>
+        <span class="skill-item">Data Presentation</span>
+      </div>
+    </div>
+    <div class="skill-row reveal">
+      <div class="skill-row-label">Professional</div>
+      <div class="skill-row-items">
+        <span class="skill-item">Critical Thinking</span>
+        <span class="skill-item">Problem Solving</span>
+        <span class="skill-item">Team Building</span>
+        <span class="skill-item">Leadership</span>
+        <span class="skill-item">Research</span>
+        <span class="skill-item">Communication</span>
+        <span class="skill-item">Time Management</span>
+        <span class="skill-item">Analytical Skills</span>
+        <span class="skill-item">Information Literacy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-wrap">
+  <h2 class="sec-title reveal">Selected <em>Projects</em> <span class="sec-title-meta">Personal builds</span></h2>
+  <div class="proj-grid">
+<div class="proj-card reveal">
+      <div class="proj-num"></div>
+      <div class="proj-name">Coming soon..,,</div>
+      <p class="proj-desc">Yet to be live</p>
+      <div class="proj-stack">
+        <span>Networking</span><span>Automation</span><span>Security</span><span>Cloud</span><span>Fibre</span>
+      
+<!--
+   
+    <div class="proj-card reveal">
+      <div class="proj-num">01</div>
+      <div class="proj-name">XAUUSD Automated Trading Bot</div>
+      <p class="proj-desc">Fully automated Gold trading bot for MetaTrader 5. Uses swing high/low zone detection as supply and demand proxies, RSI confirmation for entry filtering, and ATR-based dynamic stop loss and take profit — runs natively in MQL5.</p>
+      <div class="proj-stack">
+        <span>MQL5</span><span>MetaTrader 5</span><span>ATR</span><span>RSI</span>
+      </div>
+      <a class="proj-link" href="https://github.com/Ramaphosa" target="_blank">View on GitHub ↗</a>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-num">03</div>
+      <div class="proj-name">Enterprise Network Simulation Lab</div>
+      <p class="proj-desc">Designed and configured a segmented enterprise network in Cisco Packet Tracer — including VLANs, ACLs, inter-VLAN routing, and firewall rules. Documented and published as a reference lab for learning and review.</p>
+      <div class="proj-stack">
+        <span>Packet Tracer</span><span>VLAN</span><span>ACL</span><span>Routing</span>
+      </div>
+      <a class="proj-link" href="https://github.com/Ramaphosa" target="_blank">View on GitHub ↗</a>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-num">04</div>
+      <div class="proj-name">Python Network Config Automation</div>
+      <p class="proj-desc">Python automation script that SSHes into multiple routers and switches simultaneously and pushes configurations — reducing manual config time across multi-device environments using Netmiko.</p>
+      <div class="proj-stack">
+        <span>Python</span><span>Netmiko</span><span>SSH</span><span>Automation</span>
+      </div>
+      <a class="proj-link" href="https://github.com/Ramaphosa" target="_blank">View on GitHub ↗</a>
+    </div>
+
+    <div class="proj-card reveal">
+      <div class="proj-num">05</div>
+      <div class="proj-name">GFA Tournament Network Deploy</div>
+      <p class="proj-desc">Planned and deployed full ethernet and access point infrastructure at GIKACE for a Ghana Football Association tournament — delivered under a hard event deadline with zero prior setup on-site.</p>
+      <div class="proj-stack">
+        <span>AP Config</span><span>Ethernet</span><span>Switch Setup</span><span>Cable Management</span>
+      </div>
+    </div>*/
+ -->
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-wrap">
+  <h2 class="sec-title reveal">Professional <em>Experience</em></h2>
+  <div class="exp-entry reveal">
+    <div class="exp-image-col">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Network rack and patch panel"/>
+      <div class="exp-image-overlay"></div>
+    </div>
+    <div class="exp-body-col">
+      <div class="exp-org">National Information Technology Agency (NITA) Ghana</div>
+      <div class="exp-role-title">Network &amp; Software Engineering Intern</div>
+      <div class="exp-period">March 2026 → May 2026 · Accra, Ghana · 3 months</div>
+      <p class="exp-lead">Worked across live government infrastructure — where real-world stakes made every decision matter.</p>
+      <div class="exp-points">
+        <p class="exp-point">Contributed to network troubleshooting at the Ministry of Education — handling AP configurations, switch configs, and cable management on a live government network, joining mid-project.</p>
+        <p class="exp-point">Deployed access point and ethernet infrastructure at GIKACE for a GFA tournament, delivering a fully functional setup under event deadline pressure.</p>
+        <p class="exp-point">Co-developed an internal staff portal using Next.js, Tailwind CSS, and Firebase — writing code, performing functional testing, and delivering a working tool used inside a government agency.</p>
+        <p class="exp-point">Gained hands-on exposure to enterprise network operations and government IT infrastructure in a real production environment, learning how infrastructure actually fails at scale.</p>
+      </div>
+      <div class="exp-tags">
+        <span class="exp-tag">Next.js</span>
+        <span class="exp-tag">Tailwind CSS</span>
+        <span class="exp-tag">Firebase</span>
+        <span class="exp-tag">AP Configuration</span>
+        <span class="exp-tag">Switch Config</span>
+        <span class="exp-tag">Network Troubleshooting</span>
+        <span class="exp-tag">Government IT</span>
+        <span class="exp-tag">Cable Management</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section-wrap alt">
+  <h2 class="sec-title reveal">Education</h2>
+  <div class="edu-entry reveal">
+    <div class="edu-inst">University of Cape Coast</div>
+    <div class="edu-field">BSc Information Technology</div>
+    <div class="edu-year">2025 → 2028</div>
+  </div>
+  <div class="edu-entry reveal">
+    <div class="edu-inst">Keta Senior High Technical School</div>
+    <div class="edu-field">High School Diploma · General Science</div>
+    <div class="edu-year">2022 → 2024</div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section-wrap">
+  <h2 class="sec-title reveal">Licences &amp; Certifications <span class="sec-title-meta">13 credentials</span></h2>
+  <div class="cert-grid-mag">
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Cisco</div>
+      <div class="cert-cell-name">Junior Cybersecurity Analyst Career Path</div>
+      <div class="cert-cell-date">Issued Jun 2026</div>
+      <a class="cert-link" href="https://www.credly.com/badges/260fa395-9741-4b39-92a5-ddaf806feeb3/public_url" target="_blank">View Credential ↗</a>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="260fa395-9741-4b39-92a5-ddaf806feeb3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Cisco</div>
+      <div class="cert-cell-name">Cybersecurity Defense Analyst Career Path</div>
+      <div class="cert-cell-date">Issued Jun 2026</div>
+      <a class="cert-link" href="https://www.credly.com/badges/35eb7e3b-623f-468f-8d6c-e4c0dc2e915d/public_url" target="_blank">View Credential ↗</a>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="35eb7e3b-623f-468f-8d6c-e4c0dc2e915d" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">APIsec University</div>
+      <div class="cert-cell-name">API Security Fundamentals</div>
+      <div class="cert-cell-date">—</div>
+      <a class="cert-link" href="https://www.credly.com/badges/7fcab6d4-5eee-487b-a79c-b67718983f39/public_url" target="_blank">View Credential ↗</a>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7fcab6d4-5eee-487b-a79c-b67718983f39" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Cisco Networking Academy</div>
+      <div class="cert-cell-name">Introduction to Cybersecurity</div>
+      <div class="cert-cell-date">—</div>
+      <a class="cert-link" href="https://www.credly.com/badges/d18f3721-7001-4a0c-ad7b-709f8041382c" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Cisco Networking Academy</div>
+      <div class="cert-cell-name">Networking Device &amp; Initial Configuration</div>
+      <div class="cert-cell-date">—</div>
+      <a class="cert-link" href="https://www.credly.com/badges/42cb50e9-9075-484f-bc47-b796dcfb2adb" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Cisco Networking Academy</div>
+      <div class="cert-cell-name">Networking Basics</div>
+      <div class="cert-cell-date">Issued Mar 2026</div>
+      <a class="cert-link" href="https://www.credly.com/badges/2fd39bd2-fbf9-482d-9175-fb36400e4fcb/public_url" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Forage · Deloitte Australia</div>
+      <div class="cert-cell-name">Cyber Job Simulation</div>
+      <div class="cert-cell-date">Issued Sep 2025 · ID: A6SJeBdRCDcreqxqE</div>
+      <a class="cert-link" href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_68c9d07f6bb4830d8a06cdf9_1758114532794_completion_certificate.pdf" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Forage · Tata</div>
+      <div class="cert-cell-name">Cybersecurity Analyst Job Simulation</div>
+      <div class="cert-cell-date">Issued Feb 2026 · ID: Kz5zQpbv7CarKy752</div>
+      <a class="cert-link" href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_68c9d07f6bb4830d8a06cdf9_1770749801877_completion_certificate.pdf" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Forage · Mastercard</div>
+      <div class="cert-cell-name">Cybersecurity Job Simulation</div>
+      <div class="cert-cell-date">Issued Feb 2026 · ID: jHJsmqjmxgyky2x8X</div>
+      <a class="cert-link" href="https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_68c9d07f6bb4830d8a06cdf9_1770747652848_completion_certificate.pdf" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">LinkedIn Learning</div>
+      <div class="cert-cell-name">Networking Foundations: Networking Basics</div>
+      <div class="cert-cell-date">Issued Aug 2025</div>
+      <a class="cert-link" href="https://www.linkedin.com/learning/certificates/d96ebfad67e400633f49346d747f0e48232686210ecb2b197d474573a516429a/" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">LinkedIn Learning</div>
+      <div class="cert-cell-name">Introduction to Network Routing</div>
+      <div class="cert-cell-date">Issued Aug 2025</div>
+      <a class="cert-link" href="https://www.linkedin.com/learning/certificates/22646f921fd0d8467926e46dfd52f384710555c210e3ae80b8b0ece6d44b7ff8/" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">freeCodeCamp</div>
+      <div class="cert-cell-name">Responsive Web Design</div>
+      <div class="cert-cell-date">Issued Jun 2025</div>
+      <a class="cert-link" href="https://freecodecamp.org/certification/Ramaphosa/responsive-web-design" target="_blank">View Credential ↗</a>
+    </div>
+
+    <div class="cert-cell reveal">
+      <div class="cert-cell-issuer">Kaggle</div>
+      <div class="cert-cell-name">Kaggle Community Member</div>
+      <div class="cert-cell-date">—</div>
+      <a class="cert-link" href="https://www.kaggle.com/certification/badges/cyrilafetimorti/101" target="_blank">View Credential ↗</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-image">
+    <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1800&q=80" alt="Network operations centre"/>
+  </div>
+  <div class="contact-content">
+    <p class="contact-pre reveal">Open to opportunities</p>
+    <h2 class="contact-big reveal">Let's build<br/><em>something</em><br/>together.</h2>
+    <div class="contact-row reveal">
+      <div class="contact-item">
+        <span class="contact-item-label">Email</span>
+        <a href="mailto:morticyril@gmail.com">morticyril@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-item-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/cyril-afetimorti1100" target="_blank">cyril-afetimorti1100</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-item-label">GitHub</span>
+        <a href="https://github.com/Ramaphosa1100" target="_blank">github.com/Ramaphosa</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-item-label">Portfolio</span>
+        <a href="https://bold.pro/my/cyril-afetimorti-250722190040" target="_blank">bold.pro profile</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-mono">© 2026 Cyril Setor Afeti-Morti · Accra, Ghana</span>
+  <div class="footer-dot"></div>
+  <span class="footer-mono">Fibre &amp; Cloud Infrastructure Engineer in Training</span>
+</footer>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('in'), i * 70); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Active nav on scroll
+const sections = document.querySelectorAll('section[id], div[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('section[id]').forEach(s => navObs.observe(s));
+
+// Hamburger
+const hbg = document.getElementById('hbg');
+const mobNav = document.getElementById('mobNav');
+hbg.addEventListener('click', () => {
+  hbg.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow = mobNav.classList.contains('open') ? 'hidden' : '';
+});
+mobNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hbg.classList.remove('open');
+    mobNav.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+</body>
+</html>
